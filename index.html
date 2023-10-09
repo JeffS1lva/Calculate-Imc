@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cálculo IMC</title>
+  </head>
+  <body>
+
+    <div class="box-error">
+    
+        <h3>Digite somente números</h3>
+      
+    </div>
+
+    <div class="container">
+      <main class="box">
+        <form class="primary">
+          <h1 class="title">Cálculo de IMC</h1>
+          <div class="weight">
+            <label for="weight">Peso (kg)</label>
+            <input type="text" name="weight" 
+            id="weight" 
+            placeholder="60"
+            autocomplete="off" />
+          </div>
+
+          <div class="height">
+            <label for="height">Altura (cm)</label>
+            <input type="text" 
+            name="height" 
+            id="height" 
+            placeholder="164"
+            autocomplete="off" />
+          </div>
+
+          <form>
+            <button class="primary-btn">
+              Calcular IMC <img src="assets/arrow-up-right.png" alt="" />
+            </button>
+          </form>
+        </form>
+      </main>
+    </div>
+    <!-- O open ele exerce uma função para aparecer sem excluir a pagina, como se fosse só para desfocar (também é colocado no css como opacity e visibility).. -->
+    <div class="modal-wrapper">
+      <div class="modal-card">
+        <h2 class="title">
+
+          <button class="close">
+           <img src="assets/close.svg">
+          </button>
+
+         <span> Seu IMC é de 28 </span>
+        </h2>
+      </div>
+    </div>
+
+    <script src="Js/script.js" type="module"></script>
+  </body>
+</html>
